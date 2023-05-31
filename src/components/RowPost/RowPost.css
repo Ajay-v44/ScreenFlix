@@ -1,19 +1,86 @@
-.row{
-   margin-left: 20px;
+.row {
+    margin-left: 20px;
     color: #fff;
-
-}
-.posters{
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: fadeIn 1s;
+  }
+  
+  .posters {
     display: flex;
     padding: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
-}
-.posters::-webkit-scrollbar{
+    scrollbar-width: thin; /* Add this property */
+    animation: slideIn 1s;
+  }
+  
+  .posters::-webkit-scrollbar {
     display: none;
-}
-.poster{
-    max-height:250px;
+  }
+  
+  .poster {
+    position: relative;
+    max-height: 250px;
     margin-right: 10px;
-
-}
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .smallposter{
+    max-height: 150px;
+   
+  }
+  
+  
+  .poster:hover {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .poster:hover .overlay {
+    opacity: 1;
+  }
+  
+  .movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .movie-description {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-20px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

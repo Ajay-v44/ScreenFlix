@@ -20,7 +20,7 @@ function RowPost() {
 
   return (
     <div className='row'>
-      <h2>ScreenFlix Originals</h2>
+      <h2 className='title'>ScreenFlix Originals</h2>
       <div className='posters'>
         {movies.map((movie) => (
           <div key={movie.id} className='poster'>
@@ -28,8 +28,10 @@ function RowPost() {
               src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
               alt='Movie Poster'
             />
-            <h5 className='title'>{movie.title}</h5>
-            <p className='description'>{movie.overview}</p>
+            <div className='overlay'>
+              <h5 className='movie-title'>{movie.title}</h5>
+              <p className='movie-description'>{movie.overview}</p>
+            </div>
           </div>
         ))}
       </div>

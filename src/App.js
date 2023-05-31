@@ -11,7 +11,8 @@ function App(){
              
 <NavBAr/>
 <Banner/>
-<RowPost/>
+<RowPost title='SCREENFLIX ORIGINALS'/>
+<RowPost title='Action Movies' isSmall />
         </div>
     )
 }
