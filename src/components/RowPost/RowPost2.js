@@ -3,7 +3,7 @@ import axios from 'axios';
 import YouTube from 'react-youtube';
 import './RowPost.css';
 
-function RowPost(props) {
+function RowPost2(props) {
   const [movies, setMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState([]);
 
@@ -71,4 +71,4 @@ function RowPost(props) {
   );
 }
 
-export default RowPost;
+export default RowPost2;
