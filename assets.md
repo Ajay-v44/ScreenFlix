@@ -19,7 +19,7 @@ trending ='https://api.themoviedb.org/3/trending/all/week?api_key={API_KEY_HERE}
 
 action ='https://api.themoviedb.org/3/discover/movie?api_key={API_KEY_HERE}&with_genres=28'
 
-originals ='https://api.themoviedb.org/3/discover/tv?api_key={API_KEY_HERE}&with_networks=213'
+originals ='https://api.themoviedb.org/3/discover/tv?api_key={3522a8f8d1c3332e1a9bb409de4df75e}&with_networks=213'
 
 ComedyMovies: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HERE}&with_genres=35',
 

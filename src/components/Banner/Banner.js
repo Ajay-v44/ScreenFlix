@@ -10,7 +10,8 @@ function Banner() {
         axios
             .get(`https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}&language=en-US`)
             .then((response) => {
-                setMovie(response.data.results[0]);
+                setMovie(response.data.results[Math.floor(Math.random()*response.data.results.length)])
+;
             })
             .catch((error) => {
                 console.log(error);
