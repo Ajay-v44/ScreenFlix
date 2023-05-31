@@ -31,8 +31,8 @@
     transition: transform 0.3s;
   }
   .smallposter{
-    max-height: 150px;
-   
+    max-height:190px;
+    margin-right: 10px;
   }
   
   
